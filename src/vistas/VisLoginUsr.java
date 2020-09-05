@@ -64,11 +64,11 @@ public class VisLoginUsr {
         panel.add(txtUsr);
         txtUsr.setColumns(10);
 
-        JLabel lblContrasena = new JLabel("Direccion IP a conectar:");
-        lblContrasena.setForeground(Color.WHITE);
-        lblContrasena.setFont(new Font("Arial", Font.PLAIN, 17));
-        lblContrasena.setBounds(59, 200, 191, 26);
-        panel.add(lblContrasena);
+        JLabel lblIP = new JLabel("Direccion IP a conectar:");
+        lblIP.setForeground(Color.WHITE);
+        lblIP.setFont(new Font("Arial", Font.PLAIN, 17));
+        lblIP.setBounds(59, 200, 191, 26);
+        panel.add(lblIP);
 
         btnIngresar = new JButton("Ingresar");
         btnIngresar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));

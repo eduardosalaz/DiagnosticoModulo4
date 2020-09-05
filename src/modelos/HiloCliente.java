@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import controladores.ConPrincipalCliente;
 
 public class HiloCliente extends Thread {
     int ptoLocal;
@@ -11,6 +12,7 @@ public class HiloCliente extends Thread {
     Socket s = null;
     ServerSocket ss = null;
     ObjectInputStream ois = null;
+    public ConPrincipalCliente conPrincipalCliente = null;
 
     public HiloCliente(int ptoLocal) {
         this.ptoLocal = ptoLocal;
@@ -26,12 +28,9 @@ public class HiloCliente extends Thread {
                 s = ss.accept();
                 ois = new ObjectInputStream(s.getInputStream());
                 do {
-                    String nombre = (String) ois.readObject();
                     String mensaje = (String) ois.readObject();
-                    System.out.println(nombre + " dice: " + mensaje);
-                    if (mensaje == "exit" | mensaje == "adios") {
-                        ejecutar = false;
-                    }
+
+
                 } while (ejecutar);
                 break;
             }

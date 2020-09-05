@@ -46,13 +46,9 @@ public class ModServer {
             s=new Socket(ipRemota,ptoRemoto);
             oos=new ObjectOutputStream(s.getOutputStream());
 
-            String linea=null;
             while(ejecutar) {
                 oos.writeObject("");
-                linea=sc.nextLine();
-                oos.writeObject(linea);
 
-                //salir(linea);
             }
         } catch (IOException e) {
             e.printStackTrace();

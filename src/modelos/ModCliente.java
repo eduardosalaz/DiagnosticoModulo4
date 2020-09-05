@@ -1,5 +1,7 @@
 package modelos;
 
+import controladores.ConPrincipalCliente;
+
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.net.Socket;

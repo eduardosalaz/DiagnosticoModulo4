@@ -54,19 +54,6 @@ public class VisPrincipal{
         panel.add(panel_2);
 
         txtMensaje = new JTextField();
-        txtMensaje.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    String mensaje = txtMensaje.getText();
-
-
-                    txtAreaChat.append(mensaje + "\n");
-                    txtMensaje.setText("");
-                }
-
-            }
-        });
         txtMensaje.setBounds(10, 467, 486, 31);
         panel.add(txtMensaje);
         txtMensaje.setColumns(10);
