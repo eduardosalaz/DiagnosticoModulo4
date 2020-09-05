@@ -1,43 +1,27 @@
 package vistas;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class VisLoginSrv {
 
-	private JFrame frame;
+    public JFrame frame;
+    public boolean finished = false;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					VisLoginSrv window = new VisLoginSrv();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+    public void lanzarVista(){
+        try{
+            crearGUI();
+            frame.setVisible(true);
+            frame.setResizable(false);
+            finished = true;
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+    }
 
-	/**
-	 * Create the application.
-	 */
-	public VisLoginSrv() {
-		initialize();
-	}
-
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	}
+    private void crearGUI() {
+        frame = new JFrame();
+        frame.setBounds(100, 100, 450, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
 
 }
