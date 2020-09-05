@@ -3,21 +3,18 @@ package vistas;
 import java.awt.*;
 
 import javax.swing.JFrame;
-import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
 
 import javax.swing.*;
-import javax.swing.border.AbstractBorder;
 import javax.swing.JButton;
 import javax.swing.border.LineBorder;
-import javax.swing.border.MatteBorder;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.SoftBevelBorder;
 
-public class loginUsuario implements ActionListener{
+public class VisLoginUsr implements ActionListener{
 
 	public JFrame frame;
 	private JTextField textUsuario;
@@ -30,7 +27,7 @@ public class loginUsuario implements ActionListener{
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					loginUsuario window = new loginUsuario();
+					VisLoginUsr window = new VisLoginUsr();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -42,7 +39,7 @@ public class loginUsuario implements ActionListener{
 	/**
 	 * Create the application.
 	 */
-	public loginUsuario() {
+	public VisLoginUsr() {
 		initialize();
 	}
 

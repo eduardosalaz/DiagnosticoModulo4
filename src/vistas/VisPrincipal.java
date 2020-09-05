@@ -1,35 +1,25 @@
 package vistas;
 
 import java.awt.Color;
-import java.awt.Cursor;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyListener;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
-import javax.swing.border.LineBorder;
 import javax.swing.border.SoftBevelBorder;
-import javax.swing.table.DefaultTableModel;
 import javax.swing.JTextArea;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-public class principal implements ActionListener{
+public class VisPrincipal implements ActionListener{
 
 	public JFrame frame;
 	private JTextField textTextoAEnviar;
@@ -43,7 +33,7 @@ public class principal implements ActionListener{
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					principal window = new principal();
+					VisPrincipal window = new VisPrincipal();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -55,7 +45,7 @@ public class principal implements ActionListener{
 	/**
 	 * Create the application.
 	 */
-	public principal() {
+	public VisPrincipal() {
 		initialize();
 	}
 

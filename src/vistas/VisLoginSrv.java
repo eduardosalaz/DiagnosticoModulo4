@@ -4,7 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class loginServer {
+public class VisLoginSrv {
 
 	private JFrame frame;
 
@@ -15,7 +15,7 @@ public class loginServer {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					loginServer window = new loginServer();
+					VisLoginSrv window = new VisLoginSrv();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -27,7 +27,7 @@ public class loginServer {
 	/**
 	 * Create the application.
 	 */
-	public loginServer() {
+	public VisLoginSrv() {
 		initialize();
 	}
 
